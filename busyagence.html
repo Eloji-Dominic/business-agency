@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Adex Business Agency">
+  <meta name="description" content="Adex business agency that foresaws the boundary of business platforms in the world">
+  <meta name="description" content="This is a business agency web app template made by Eloji Dominic">
+  <link rel="shortcut icon" href="../Adex/assets/images/favicon.svg" type="image/jpg+svg">
+  <!-- Goggle fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Adex Business Agency</title>
+  <!-- Custom css -->
+  <link rel="stylesheet" href="./assets/css/busyagence.css">
+  <!-- Preload Images -->
+  <link rel="preload" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" href="./assets/images/hero-slide-3.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header active" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-light.svg" height="74" height="24" alt="Adex home" class="logo-light">
+        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="Adex home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+        <div class="wrapper">
+          <a href="info@email.com" class="contact-link">info@email.com</a>
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      
+      <a href="#" class="btn btn-primary">Free Trial</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <article>
+      <section class="section hero has-bg-image" aria-label="home" style="background-image: url(./assets/images/hero-bg.jpg);">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Crafting project specific solutions with expertise.</h1>
+            <p class="hero-text">We’re a creative company that focuses on establishing long-term relationships with customers.</p>
+            <div class="btn-wrapper">
+              <a href="#" class="btn btn-primary">Explore Now</a>
+              <a href="#" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="hero-slider" data-slider>
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 558;">
+                    <img src="./assets/images/hero-slide-1.jpg" alt="hero banner" class="img-cover">
+                  </figure>
+                </li>
+                <li class="slider-item">
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 558;">
+                      <img src="./assets/images/hero-slide-2.jpg" alt="hero banner" class="img-cover">
+                    </figure>
+                    <button class="play-btn" aria-label="play adex">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </li>
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 558;">
+                    <img src="./assets/images/hero-slide-3.jpg" alt="hero banner" class="img-cover">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service -->
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+          <ul class="grid-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">24/7 Support</h3>
+                <p class="card-text">
+                  We assist with your project and give you daily solution that cna satisfy and improve your business goals.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Secure Payments</h3>
+                <p class="card-text">
+                  We build and secure your payments so as to ensure nice business with good bargain and nice marketing.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Daily Updates</h3>
+                <p class="card-text">
+                  We give you updates that will help to backup all your various business works and bausiness transactions.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Market Research</h3>
+                <p class="card-text">
+                  We give you the best solution by encompassing various complex electronic technologies that can vouchsafe your market research with ease.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="500" loading="lazy" alt="about banner" class="w-100">
+          </figure>
+          <div class="about-content">
+            <p class="section-title" id="about-label">Why Choose Us?</p>
+            <h2 class="h2 subtitle">
+              We bring solutions to make life easier for our clients.
+            </h2>
+            <ul>
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Professional Design</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    We have great and trained software enginers that can give you a professional design for your business website.
+                  </p>
+                </div>
+              </li>
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Top-Notch Support</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    We have great support from other top notch engineeers that are in different software companies that can help to deliver a nice solution to your business website.
+                  </p>
+                </div>
+              </li>
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Exclusive Assets</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    We have great exclusive assets that can share and improve business commodities with clients and serious investors for your business.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section feature" aria-labelled-by="feature-label">
+        <div class="container">
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" alt="feature banner" loading="lazy" width="800" height="531" class="w-100">
+          </figure>
+          <div class="feature-content">
+            <p class="section-subtitle" id="feature-label">Our Solutions</p>
+            <h2 class="h2 section-title">
+              We make your spending stress-free for you to have the perfect control.
+            </h2>
+            <p class="section-text">
+              We have made many clients happy of our business by removing excessive stress that is experienced in their business.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Your business is in the hands of great designers</span>
+                </div>
+              </li>
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Accurate and steady business transaction with new clients</span>
+                </div>
+              </li>
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Full introduction to interested investors for promotion of your businesss</span>
+                </div>
+              </li>
+              <li>
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">New trends in the market capitals with good data analytics</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg');">
+            <li>
+              <p class="card-text">
+                <span class="h1">7518+</span>
+                <span class="span">Completed Projects</span>
+              </p>
+            </li>
+            <li>
+              <p class="card-text">
+                <span class="h1">3472+</span>
+                <span class="span">Happy Customers</span>
+              </p>
+            </li>
+            <li>
+              <p class="card-text">
+                <span class="h1">2184+</span>
+                <span class="span">Expert Employees</span>
+              </p>
+            </li>
+            <li>
+              <p class="card-text">
+                <span class="h1">4523+</span>
+                <span class="span">Awards Won</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+          <p class="section-subtitle" id="project-label">Case Studies</p>
+          <h2 class="h2 section-title">
+            Check out some of our awesome projects with creative ideas and great design. 
+          </h2>
+          <ul class="grid-list">
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--height: 350; --width: 560;">
+                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Coding Projects</a>
+                  </h3>
+                  <p class="card-text">
+                    Nice and built projects that can enhance the true nature of your business to your first clients.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      <time class="meta-text" datetime="2025-06-01">01 May 2025</time>
+                    </li>
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                      <span class="meta-text">Coding</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--height: 350; --width: 560;">
+                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy" alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Commission Projects</a>
+                  </h3>
+                  <p class="card-text">
+                    We grant nice commissions to all referals who makes our business known to the world which brings new clients in our business thereby improving our company.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      <time class="meta-text" datetime="2025-06-02">02 May 2025</time>
+                    </li>
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                      <span class="meta-text">Workspace</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project-card">
+                <figure class="card-banner img-holder" style="--height: 350; --width: 560;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy" alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Team Projects</a>
+                  </h3>
+                  <p class="card-text">
+                    We have excellent teams that can build and design your websites and iphone apps at a very good rate and price.
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      <time class="meta-text" datetime="2025-06-03">03 May 2025</time>
+                    </li>
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                      <span class="meta-text">Meeting</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+          <h2 class="h2 section-title">
+            Join our community by using our services and grow your business.
+          </h2>
+          <a href="#" class="btn btn-primary">Try it For Free</a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+            </a>
+            <p class="footer-text">
+              &copy; 2022 codewithsadee. All rights reserved.
+            </p>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-dribbble"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="h4 footer-list-title">Get in Touch</p>
+            </li>
+            <li>
+              <address class="footer-text">
+                Moonshine St. 14/05 Light City, London, United Kingdom
+              </address>
+            </li>
+            <li>
+              <a href="info@email.com" class="footer-link">info@email.com</a>
+            </li>
+            <li>
+              <a href="tel:001234567890" class="footer-link">00 (123) 456 78 90</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="h4 footer-list-title">Learn More</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Our Story</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="h4 footer-list-title">Our Newsletter</p>
+            <p class="footer-text">
+              Subscribe to our newsletter to get our news & deals delivered to you.
+            </p>
+            <form class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Email Address" class="input-field">
+              <button type="submit" class="submit-btn">Join</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Custom js -->
+  <script type="module" src="./scripts/busyagence.js"></script>
+  <!-- Ion-icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
